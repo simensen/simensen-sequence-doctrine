@@ -1,0 +1,40 @@
+{
+  "name": "simensen/sequence-doctrine",
+  "description": "Sequences for Doctrine",
+  "license": "MIT",
+  "type": "library",
+  "require": {
+    "doctrine/dbal": "^3.7.0 || ^4.0",
+    "simensen/sequence": "^0.0@dev"
+  },
+  "require-dev": {
+    "ergebnis/composer-normalize": "^2.43"
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "autoload": {
+    "psr-4": {
+      "Simensen\\SequenceDoctrine\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Simensen\\SequenceDoctrine\\Tests\\Integration\\": "tests/Integration/",
+      "Simensen\\SequenceDoctrine\\Tests\\Unit\\": "tests/Unit/"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "ergebnis/composer-normalize": true
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-main": "0.0.x-dev"
+    },
+    "composer-normalize": {
+      "indent-size": 2,
+      "indent-style": "space"
+    }
+  }
+}
